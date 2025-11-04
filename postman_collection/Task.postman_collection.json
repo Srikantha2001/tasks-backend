@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "2c3acf19-473b-4f7e-8cf3-944de149180c",
+		"name": "Task",
+		"description": "HAR To Postman Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17454666",
+		"_collection_link": "https://red-escape-811382.postman.co/workspace/Srikantha~bcea4d2e-0a7e-45f6-a87c-c08726a202e8/collection/17454666-2c3acf19-473b-4f7e-8cf3-944de149180c?action=share&source=collection_link&creator=17454666"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/12.0.0"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/tasks/create",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"tasks",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "User-Agent",
+								"value": "insomnia/12.0.0"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/tasks/create",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"tasks",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Nov 2025 13:55:24 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "text/plain;charset=UTF-8 content type is not supported in the response body"
+				}
+			]
+		},
+		{
+			"name": "Get all task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/12.0.0"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/tasks/all",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"tasks",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "insomnia/12.0.0"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/tasks/all",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"tasks",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Nov 2025 13:56:34 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n {\n  \"id\": 2,\n  \"title\": \"task2\",\n  \"description\": \"task2 description\",\n  \"taskStatus\": \"TODO\",\n  \"createdTime\": \"2025-11-04T19:14:53.998198\"\n },\n {\n  \"id\": 4,\n  \"title\": \"task1\",\n  \"description\": \"task1 description\",\n  \"taskStatus\": \"TODO\",\n  \"createdTime\": \"2025-11-04T19:25:24.874808\"\n },\n {\n  \"id\": 3,\n  \"title\": \"task3\",\n  \"description\": \"task3 description updated\",\n  \"taskStatus\": \"TODO\",\n  \"createdTime\": \"2025-11-04T19:15:01.293656\"\n }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update task details",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/12.0.0"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/tasks/3",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"tasks",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "User-Agent",
+								"value": "insomnia/12.0.0"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/tasks/3",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"tasks",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Nov 2025 13:56:31 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"id\": 3,\n \"title\": \"task3\",\n \"description\": \"task3 description updated\",\n \"taskStatus\": \"TODO\",\n \"createdTime\": \"2025-11-04T19:15:01.293656\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update status",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/12.0.0"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/tasks/3",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"tasks",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "insomnia/12.0.0"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/tasks/3",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"tasks",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Nov 2025 13:57:26 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"id\": 3,\n \"title\": \"task3\",\n \"description\": \"task3 description updated\",\n \"taskStatus\": \"DONE\",\n \"createdTime\": \"2025-11-04T19:15:01.293656\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/12.0.0"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/tasks/3",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"tasks",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "insomnia/12.0.0"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/tasks/3",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"tasks",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Nov 2025 13:58:04 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL1",
+			"value": "http://localhost:8080",
+			"type": "any"
+		}
+	]
+}
